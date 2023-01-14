@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.App {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 50px 1fr;
+  grid-gap: 30px;
+  margin: 100px auto;
+  width: 880px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.block input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 20px 20px;
+  letter-spacing: 1.3px;
+  outline: none;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.block div {
+  margin-bottom: 10px;
+}
+
+.currencies {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.currencies li {
+  display: inline-flex;
+  flex: 1;
+  justify-content: center;
+  padding: 10px 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.currencies li:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.currencies li:active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.currencies li.active {
+  color: #fff;
+  background-color: #16b67f;
+}
+
+.currencies li:last-of-type {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 50px;
+  border-right: 0;
+}
+
+li svg {
+  width: 16px;
+  height: 16px;
+}
